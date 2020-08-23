@@ -12,15 +12,11 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <App />
-        </Route>
+        <Route exact path="/" component={App} />
         <Route path="/createestate">
           <CreateEstate message="Create Estate" />
         </Route>
-        <Route path="/configureestate">
-          <ConfigureEstate message="Configure Estate" />
-        </Route>
+        <Route path="/configureestate" component={ConfigureEstate} />
         <Route path="/handoverestate">
           <HandoverEstate message="Handover Estate" />
         </Route>
