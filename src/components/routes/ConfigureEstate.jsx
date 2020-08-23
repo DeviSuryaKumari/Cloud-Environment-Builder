@@ -31,11 +31,19 @@ export function ConfigureEstate(props) {
 
   return (
     <div className="configure-estate-container">
-      <div className="packages-list-container">
-        <ul className="packages-list">{displayList}</ul>
+      <div className="configure-estate-container__header">
+        <h2>Available Packages</h2>
+        <h2 style={{ visibility: "hidden" }}>Available Versions</h2>
+        <h2 style={{ visibility: "hidden" }}>Selected Package Details</h2>
       </div>
-      <div className="version-list-container"></div>
-      <div className="selected-packages-container"></div>
+      <div className="configure-estate-container__content">
+        <div className="packages-list-container">
+          <ul className="packages-list">{displayList}</ul>
+        </div>
+        <div className="version-list-container"></div>
+        <div className="selected-packages-container"></div>
+      </div>
+      <div className="configure-estate-container__footer"></div>
     </div>
   );
 }
