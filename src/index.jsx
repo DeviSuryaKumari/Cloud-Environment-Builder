@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { CreateEstate } from "../src/components/routes/CreateEstate";
-import { ConfigureEstate } from "../src/components/routes/ConfigureEstate";
-import { HandoverEstate } from "../src/components/routes/HandoverEstate";
+import { CreateEstate } from "./components/routes/CreateEstate";
+import { ConfigureEstate } from "./components/routes/ConfigureEstate";
+import { HandoverEstate } from "./components/routes/HandoverEstate";
+import Home from "./components/home/Home";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={Home} />
         <Route path="/createestate">
           <CreateEstate message="Create Estate" />
         </Route>

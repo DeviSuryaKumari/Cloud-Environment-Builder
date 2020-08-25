@@ -20,19 +20,26 @@ export function EstateCard(props) {
   };
   function getClassAndDisplayNameBasedOnType() {
     switch (props.type) {
-      case "create":
+      case "create hiera":
         return {
-          className: "home__create-estate-card estate-card",
-          displayName: "Create Estate",
+          className: "home__content__services__create-hiera-card estate-card",
+          displayName: "New Hiera",
+        };
+      case "create estate":
+        return {
+          className: "home__content__services__create-estate-card estate-card",
+          displayName: "New Estate",
         };
       case "configure":
         return {
-          className: "home__configure-estate-card estate-card",
+          className:
+            "home__content__services__configure-estate-card estate-card",
           displayName: "Configure Estate",
         };
       case "handover":
         return {
-          className: "home__handover-estate-card estate-card",
+          className:
+            "home__content__services__handover-estate-card estate-card",
           displayName: "Handover Estate",
         };
       default:
