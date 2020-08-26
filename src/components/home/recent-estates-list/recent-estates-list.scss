@@ -1,0 +1,31 @@
+.home__content__recent-estates {
+  //   display: flex;
+  //   justify-content: center;
+  &__list {
+    height: 360px;
+    // width: 1024px;
+    padding: 0 40px;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+
+    &-item {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-self: center;
+      height: 40px;
+      &__border-bottom {
+        margin-left: 170px;
+        max-width: 1024px;
+        border-bottom: 1px solid grey;
+      }
+      span {
+        justify-self: center;
+        align-self: center;
+      }
+    }
+    &-item:first-child {
+      font-weight: bold;
+    }
+  }
+}

@@ -15,8 +15,9 @@
     grid-template-rows: 1fr 2.5fr 0.5fr 6fr;
     margin: 0 48px;
     &__header {
+      padding-left: 80px;
       align-self: end;
-      font-weight: bold;
+      font-weight: bolder;
       font-size: 20px;
       color: #303030;
       text-shadow: 1px 1px #009999;
@@ -24,7 +25,7 @@
     &__services {
       display: inline-grid;
       grid-template-columns: repeat(4, 1fr);
-
+      padding: 0 80px;
       .estate-card {
         align-self: center;
         justify-self: center;
@@ -33,6 +34,9 @@
           font-size: 100%;
           font-weight: 900;
           color: #505050;
+        }
+        .card-icon {
+          font-size: 32px;
         }
         display: flex;
         flex-direction: column;
