@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  // background-image: linear-gradient(to bottom right, #009999, #ccffff);
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    overflow-y: auto;
+    max-height: 400px;
+    .cart-icons {
+      margin-left: 100px;
+      margin-bottom: 8px;
+      display: flex;
+      .cart-icon {
+        font-size: 32px;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -6,9 +6,13 @@ export function RecentEstatesList(props) {
     return (
       <>
         <li className="home__content__recent-estates__list-item">
-          <span>{estateObj.name}</span>
+          <span>{estateObj.estateCode}</span>
+          <span>{estateObj.customerName}</span>
+          <span>{estateObj.registeredDate}</span>
           <span>{estateObj.status}</span>
-          <span>{estateObj.operations}</span>
+          <span>
+            <button>{estateObj.actions}</button>
+          </span>
         </li>
         <div className="home__content__recent-estates__list-item__border-bottom"></div>
       </>
@@ -17,9 +21,11 @@ export function RecentEstatesList(props) {
   displayList.unshift(
     <>
       <li className="home__content__recent-estates__list-item">
-        <span>{"Name"}</span>
-        <span>{"Status"}</span>
-        <span>{"Operations"}</span>
+        <span>Estate Code</span>
+        <span>Customer Name</span>
+        <span>Registered Date</span>
+        <span>Status</span>
+        <span>Actions</span>
       </li>
       <div className="home__content__recent-estates__list-item__border-bottom"></div>
     </>

@@ -1,21 +1,18 @@
 .home__content__recent-estates {
-  //   display: flex;
-  //   justify-content: center;
   &__list {
-    height: 360px;
-    // width: 1024px;
+    max-height: 360px;
     padding: 0 40px;
     list-style-type: none;
     display: grid;
-    grid-template-rows: repeat(8, 1fr);
+    max-width: 1260px;
 
     &-item {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       align-self: center;
       height: 40px;
       &__border-bottom {
-        margin-left: 170px;
+        margin-left: 58px;
         max-width: 1024px;
         border-bottom: 1px solid grey;
       }
@@ -26,6 +23,7 @@
     }
     &-item:first-child {
       font-weight: bold;
+      align-self: center;
     }
   }
 }
